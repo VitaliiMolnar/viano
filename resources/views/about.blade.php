@@ -1,2 +1,2 @@
 <!doctype html>
-<h1>About</h1>
+<h1>About us</h1>
