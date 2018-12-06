@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\CaruselController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +14,16 @@ use App\Http\Controllers\IndexController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController@gallery')->name('gallery');
 
 Route::get('/about', 'IndexController@about')->name('about');
 
 Route::get('/contacts', 'IndexController@contacts')->name('contacts');
 
-Route::get('/gallery', 'IndexController@gallery')->name('gallery');
+Route::get('/carusel', 'IndexController@carusel')->name('carusel');
 
 Route::get('/feedback', 'IndexController@feedback')->name('feedback');
+
+Route::get('/{slug}.html', 'CaruselController@imageBySlug')
+    ->name('carusel.image')
+    ->where('slug', '[\:0-9A-Za-z\-]+');

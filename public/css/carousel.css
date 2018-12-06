@@ -1,0 +1,123 @@
+@charset "UTF-8";
+a {
+  outline: none; }
+
+.mobile-header,
+.header {
+  margin: 0 !important;
+  padding: 1% !important; }
+
+.mobile-header {
+  color: #fff; }
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: white; }
+
+p {
+  color: #000;
+  margin: 2% !important; }
+
+.imageDiv {
+  text-align: center; }
+
+.btns {
+  margin-top: 2.5% !important; }
+
+.icon h6 {
+  margin-top: 5% !important; }
+
+.popup_img {
+  margin-top: 1.5% !important; }
+
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center; }
+
+.popup_bg {
+  background: black;
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%; }
+
+.popup_img {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 4% !important;
+  z-index: 5;
+  max-height: 85%;
+  max-width: 85%;
+  margin: 1% 0 0 0; }
+
+.image {
+  cursor: url(../img/zoom-in.png), pointer; }
+
+.popup_bg p {
+  text-align: center;
+  color: #fff !important;
+  margin-top: 50% !important; }
+
+.popup_bg:first-child {
+  position: absolute;
+  background: #000; }
+
+.arrowsContainer {
+  display: table;
+  width: 100%; }
+
+.next {
+  width: 300px;
+  /*задаем ширину блока*/
+  height: 100px;
+  /*задаем высоту блока*/
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 95%; }
+
+.prev {
+  width: 300px;
+  /*задаем ширину блока*/
+  height: 100px;
+  /*задаем высоту блока*/
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 5%; }
+
+.cross {
+  width: 300px;
+  /*задаем ширину блока*/
+  height: 100px;
+  /*задаем высоту блока*/
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 10%;
+  left: 5%; }
+
+.close {
+  width: 300px;
+  /*задаем ширину блока*/
+  height: 30px;
+  /*задаем высоту блока*/
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 7%;
+  left: 21%; }
+
+#navbar {
+  overflow: hidden; }
+
+.sticky {
+  position: fixed;
+  top: 1;
+  width: 30%;
+  height: 30px; }
